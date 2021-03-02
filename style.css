@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+body {
+  font-family: "Raleway", "Sans serif";
+  margin-left: 50px;
+  margin-right: 50px;
+}
+img.headerLogo {
+  height: 50px;
+  margin-top: -15px;
+}
+.headersite {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+  font-weight: bold;
+}
+.navlien, .navlien:hover {
+  padding: 2em;
+  text-decoration: none;
+}
+.navlien:hover {
+  border-top: solid 3px #0065FC;
+  color: #0065FC
+}
+.hebergements, footer{
+  background-color: #f2f2f2;
+  border-radius: 25px;
+}
+.logementsmain {
+  display: flex;
+  margin: auto;
+}
+.logementsmain img {
+    position: relative;
+    min-height: 45%;
+    max-height: 45%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.Populaires {
+  background-color: #f2f2f2;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  border-radius: 1px;
+}
+.logementspop {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.logementspop img {
+  position: relative;
+    min-height: 20%;
+    max-height: 20%;
+    min-width: 20%;
+    max-width: 20%;
+}
+.Activites {
+  display: flex;
+  margin: auto;
+}
+.Activites img {
+  position: relative;
+  min-height: 50%;
+  max-height: 75%;
+  min-width: 33%;
+  max-width: 100%;
+}
+footer.footer {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  display: flex;
+}
