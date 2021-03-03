@@ -11,7 +11,7 @@ img.headerLogo {
 .headersite {
   display: flex;
   justify-content: space-between;
-  padding-top: 2em;
+  padding-top: 1.7em;
   font-weight: bold;
 }
 .navlien, .navlien:hover {
