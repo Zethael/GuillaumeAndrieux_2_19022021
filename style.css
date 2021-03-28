@@ -327,7 +327,13 @@ footer p {
   body {
     margin-left: 0;
     margin-right: 0;
-}
+  }
+  .headersite {
+    flex-direction: column;
+  }
+  img.headerLogo {
+    width: 20%;
+    margin-left: 5%;
   }
   .affinage {
     margin-left: 5%;
@@ -336,6 +342,11 @@ footer p {
     width: 66%;
     font-size: 24px;
   }
+  h5 {
+    font-size: 24px;
+    margin-left: 6%;
+  }
+
   .recherche {
     width: 100%;
   }
@@ -367,7 +378,7 @@ footer p {
   }
   .populaires header {
     justify-content: space-between;
-    margin-left: 2.5%;
+    margin-left: 6%;
   }
   .logementspop {
     width: 100%;
@@ -383,7 +394,7 @@ footer p {
     border-radius: 20px 0 0 20px;
   }
   .populaires .icon {
-    margin-right: 5%;
+    margin-right: 13%;
   }
   .hebergements {
     width: 100%;
