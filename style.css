@@ -2,9 +2,8 @@
 /* Police, etc */
 body {
   font-family: "Raleway", "Sans serif";
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 0 4%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 form, input, button {
   font-family: "Raleway", "Sans serif";
@@ -71,25 +70,24 @@ section.affinage {
   padding-left: 15px;
   background-color: #f2f2f2;
 }
-.boutonfiltre1 {
+.boutonfiltre {
   background-color: transparent;
   border: 2px solid RGBa(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  border-left: none;
+  margin-right: 25px;
   border-radius: 25px;
   height: 50px;
-  width: 193px;
   font-size: 16px;
-  margin-right: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
+  padding-left: 0;
+  padding-top: 0;
 }
-#iconefiltre1 {
+.boutonfiltre i {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #DEEBFF;
-  position: relative;
-  left: -17px;
-  top: -17px;
   float: left;
   color: #0065FC;
   background-color: #DEEBFF;
@@ -97,83 +95,10 @@ section.affinage {
   height: 48px;
   width: 48px;
 }
-.boutonfiltre2 {
-  background-color: transparent;
-  border: 2px solid RGBa(0, 0, 0, 0.15);
-  border-radius: 25px;
-  height: 50px;
-  width: 152px;
-  font-size: 16px;
+.motfiltre {
+  margin-left: 25px;
   margin-right: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-}
-#iconefiltre2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #DEEBFF;
-  position: relative;
-  left: -17px;
-  top: -17px;
-  float: left;
-  color: #0065FC;
-  background-color: #DEEBFF;
-  border-radius: 100%;
-  height: 48px;
-  width: 48px;
-}
-.boutonfiltre3 {
-  background-color: transparent;
-  border: 2px solid RGBa(0, 0, 0, 0.15);
-  border-radius: 25px;
-  height: 50px;
-  width: 184px;
-  font-size: 16px;
-  margin-right: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-}
-#iconefiltre3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #DEEBFF;
-  position: relative;
-  left: -17px;
-  top: -17px;
-  float: left;
-  color: #0065FC;
-  background-color: #DEEBFF;
-  border-radius: 100%;
-  height: 48px;
-  width: 48px;
-}
-.boutonfiltre4 {
-  background-color: transparent;
-  border: 2px solid RGBa(0, 0, 0, 0.15);
-  border-radius: 25px;
-  height: 50px;
-  width: 241px;
-  font-size: 16px;
-  margin-right: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-}
-#iconefiltre4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #DEEBFF;
-  position: relative;
-  left: -17px;
-  top: -17px;
-  float: left;
-  color: #0065FC;
-  background-color: #DEEBFF;
-  border-radius: 100%;
-  height: 48px;
-  width: 48px;
+  word-wrap: normal;
 }
 .info {
   display: flex;
@@ -196,71 +121,293 @@ section.affinage {
 /* Blocs hebergements */
 .blocshotel {
   display: flex;
-  gap: 20px;
+  align-items: stretch;
+  justify-content: space-between;
 }
 .hebergements {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  width: 65%;
 }
-#hebergements {
-  max-width: 60%;
+.populaires {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
-#populaires {
-  max-width: 20%;
-}
-.hebergements, footer{
+.hebergements, .populaires {
   background-color: #f2f2f2;
   border-radius: 25px;
 }
+.hebergements header {
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.hebergements footer {
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
 .logementsmain {
-  display: flex;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  height: 100%;
+}
+.logementsmain figure {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 30px;
+  box-shadow: 0 0 25px #0000002e;
 }
 .logementsmain img {
-    position: relative;
-    min-height: 45%;
-    max-height: 45%;
-    min-width: 100%;
-    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 30px 30px 0 0;
 }
-.Populaires {
-  background-color: #f2f2f2;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  border-color: #f2f2f2;
-  border-radius: 1px;
+.logementsmain i {
+  color: #0065FC;
+  font-size: 16px;
+}
+.logementsmain figcaption {
+  text-align: start;
+  padding-left: 5%;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 .logementspop {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 5%;
+  word-wrap: normal;
+}
+.populaires header {
   display: flex;
-  flex-direction: column;
-  min-width: 20%;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 16px;
+}
+.populaires header i {
+  margin-top: 25px;
+  font-size: 22px;
+}
+.logementspop figure {
+  display: flex;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 30px;
+  box-shadow: 0 0 25px #0000002e;
 }
 .logementspop img {
-  position: relative;
-    min-height: 20%;
-    max-height: 20%;
-    min-width: 20%;
-    max-width: 20%;
+  object-fit: cover;
+  width: 40%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+}
+.logementspop figcaption {
+  text-align: start;
+  padding-left: 5%;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.logementspop figcaption i {
+  color: #0065FC;
+  font-size: 16px;
 }
 /* Bloc Activités */
-.Activites {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+
+section {
+  margin-bottom: 3%;
 }
-.Activites img {
-  position: relative;
-  min-height: 50%;
-  max-height: 75%;
-  min-width: 33%;
-  max-width: 75%;
+.Activites {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-template-rows: 500px; 
+    grid-row-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.act1 {
+  grid-area: auto;
+  height: 100%;
+}
+.act1 figure {
+  border: 1px solid white;
+  border-radius: 30px;
+  height: 100%;
+  box-shadow: 0 0 25px #0000002e;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.act1 img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 50px);
+  border-radius: 30px 30px 0 0;
+}
+.act2 {
+  grid-area: auto;
+  width: 100%;
+  height: 100%;
+}
+.act2 figure {
+  border: 1px solid white;
+  border-radius: 30px;
+  height: 47%;
+  box-shadow: 0 0 25px #0000002e;
+  font-size: 12px;
+}
+.act2 img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 50px);
+  border-radius: 30px 30px 0 0;
+}
+.act4 {
+  grid-area: auto;
+  height: 100%;
+}
+.act4 figure {
+  border: 1px solid white;
+  border-radius: 30px;
+  height: 100%;
+  box-shadow: 0 0 25px #0000002e;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.act4 img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 50px);
+  border-radius: 30px 30px 0 0;
+}
+.act5 {
+  grid-area: auto;
+  width: 100%;
+  height: 100%;
+}
+.act5 figure {
+  border: 1px solid white;
+  border-radius: 30px;
+  height: 47%;
+  box-shadow: 0 0 25px #0000002e;
+  font-size: 12px;
+}
+.act5 img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 50px);
+  border-radius: 30px 30px 0 0;
 }
 /* Footer */
-footer.footer {
+footer {
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-footer {
-  display: flex;
+footer ul {
+  list-style-type: none;
 }
+footer li {
+  font-size: 22px;
+  
+}
+footer p {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 22px;
+}
+@media all and (max-width: 600px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+}
+  }
+  .affinage {
+    margin-left: 5%;
+  }
+  h1 {
+    width: 66%;
+    font-size: 24px;
+  }
+  .recherche {
+    width: 100%;
+  }
+  .blocshotel {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .menufiltres {
+    flex-wrap: wrap;
+  }
+  .info {
+    width: 80%;
+    font-size: 18px;
+  }
+  .logementsmain {
+    display: flex;
+    flex-direction: column;
+  }
+  .logementsmain figcaption {
+    margin-bottom: 0;
+  }
+  .logementsmain footer {
+    text-align: left;
+  }
+  .populaires {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 0;
+  }
+  .populaires header {
+    justify-content: space-between;
+    margin-left: 2.5%;
+  }
+  .logementspop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .logementspop figure {
+    height: 150px;
+    border-radius: 20px;
+  }
+  .logementspop img {
+    border-radius: 20px 0 0 20px;
+  }
+  .populaires .icon {
+    margin-right: 5%;
+  }
+  .hebergements {
+    width: 100%;
+    background-color: white;
+  }
+  .hebergements header {
+    margin-right: 5%;
+  }
+  .hebergements footer {
+    background-color: white;
+    margin-bottom: 0;
+    margin-left: 6%;
+  }
+  .Activites {
+    display: flex;
+    flex-direction: column;
+  }
+  .Activites figure {
+    height: 200px;
+    font-weight: bolder;
+  }
+  .Activites figcaption {
+    margin-left: 5%;
+  }
+  footer {
+    flex-direction: column;
+  }
