@@ -331,12 +331,34 @@ footer p {
   .headersite {
     flex-direction: column;
   }
+  .headersite nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .navlien {
+    overflow: auto;
+  }
+  .navlien:hover {
+    border-top: 0;
+    border-bottom: solid 3px #0065FC;
+    color: #0065FC;
+  }
+  #signup {
+    position: absolute;
+    right: 1%;
+    top: 5px;
+    color: #0065FC;
+  }
   img.headerLogo {
     width: 20%;
     margin-left: 5%;
   }
   .affinage {
     margin-left: 5%;
+  }
+  section.affinage {
+    padding-top: 0;
   }
   h1 {
     width: 66%;
@@ -349,6 +371,7 @@ footer p {
 
   .recherche {
     width: 100%;
+    margin-left: 5%;
   }
   .blocshotel {
     flex-direction: column-reverse;
