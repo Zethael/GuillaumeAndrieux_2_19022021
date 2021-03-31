@@ -5,11 +5,13 @@ body {
   margin-left: 3%;
   margin-right: 3%;
 }
-form, input, button {
+form,
+input,
+button {
   font-family: "Raleway", "Sans serif";
   font-weight: bold;
 }
-/* Header et nav */ 
+/* Header et nav */
 img.headerLogo {
   height: 50px;
   margin-top: -15px;
@@ -20,13 +22,14 @@ img.headerLogo {
   padding-top: 1.7em;
   font-weight: bold;
 }
-.navlien, .navlien:hover {
+.navlien,
+.navlien:hover {
   padding: 2em;
   text-decoration: none;
 }
 .navlien:hover {
-  border-top: solid 3px #0065FC;
-  color: #0065FC
+  border-top: solid 3px #0065fc;
+  color: #0065fc;
 }
 /* Bloc recherche */
 h1 {
@@ -56,7 +59,7 @@ section.affinage {
   width: 125px;
   border: 1px solid RGBa(0, 0, 0, 0.05);
   border-radius: 0px 15px 15px 0px;
-  background-color: #0065FC;
+  background-color: #0065fc;
   color: white;
   font-size: 18px;
 }
@@ -93,10 +96,10 @@ section.affinage {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #DEEBFF;
+  background-color: #deebff;
   border: 1px solid transparent;
   float: left;
-  color: #0065FC;
+  color: #0065fc;
   border-radius: 100%;
   height: 48px;
   width: 48px;
@@ -113,16 +116,16 @@ section.affinage {
   margin: 42px 0;
 }
 .iconeinfo {
-    color: #0065FC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px #f2f2f2;
-    border-radius: 30px;
-    padding: 8px;
-    width: 16px;
-    height: 16px;
-    margin-right: 11px;
+  color: #0065fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #f2f2f2;
+  border-radius: 30px;
+  padding: 8px;
+  width: 16px;
+  height: 16px;
+  margin-right: 11px;
 }
 /* Blocs hebergements */
 .blocshotel {
@@ -141,7 +144,8 @@ section.affinage {
   flex-direction: column;
   width: 30%;
 }
-.hebergements, .populaires {
+.hebergements,
+.populaires {
   background-color: #f2f2f2;
   border-radius: 25px;
 }
@@ -165,13 +169,13 @@ section.affinage {
   box-shadow: 0 0 25px #0000002e;
 }
 .logementsmain img {
-    object-fit: cover;
-    width: 100%;
-    height: 120px;
-    border-radius: 30px 30px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 30px 30px 0 0;
 }
 .logementsmain i {
-  color: #0065FC;
+  color: #0065fc;
   font-size: 16px;
 }
 .logementsmain figcaption {
@@ -202,7 +206,7 @@ section.affinage {
 }
 .logementspop figure {
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 5px solid whitesmoke;
   border-radius: 30px;
   box-shadow: 0 0 25px #0000002e;
@@ -220,7 +224,7 @@ section.affinage {
   margin-bottom: 5px;
 }
 .logementspop figcaption i {
-  color: #0065FC;
+  color: #0065fc;
   font-size: 16px;
 }
 /* Bloc Activités */
@@ -229,13 +233,13 @@ section {
   margin-bottom: 3%;
 }
 .Activites {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2%;
-    grid-template-rows: 500px; 
-    grid-row-gap: 2%;
-    justify-items: stretch;
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-template-rows: 500px;
+  grid-row-gap: 2%;
+  justify-items: stretch;
+  align-items: stretch;
 }
 .act1 {
   grid-area: auto;
@@ -318,7 +322,6 @@ footer ul {
 }
 footer li {
   font-size: 22px;
-  
 }
 footer p {
   margin-left: 40px;
@@ -343,14 +346,14 @@ footer p {
   }
   .navlien:hover {
     border-top: 0;
-    border-bottom: solid 3px #0065FC;
-    color: #0065FC;
+    border-bottom: solid 3px #0065fc;
+    color: #0065fc;
   }
   #signup {
     position: absolute;
     right: 1%;
     top: 5px;
-    color: #0065FC;
+    color: #0065fc;
   }
   img.headerLogo {
     width: 20%;
@@ -521,10 +524,10 @@ footer p {
     padding-bottom: 5%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-}
+  }
   .act1 figure {
-  margin: 0;
-}
+    margin: 0;
+  }
   .act2 {
     display: flex;
     flex-direction: column;
