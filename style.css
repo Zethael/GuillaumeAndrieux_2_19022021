@@ -93,7 +93,8 @@ section.affinage {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #DEEBFF;
+  background-color: #DEEBFF;
+  border: 1px solid transparent;
   float: left;
   color: #0065FC;
   border-radius: 100%;
@@ -246,8 +247,6 @@ section {
   height: 100%;
   box-shadow: 0 0 25px #0000002e;
   font-size: 12px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .act1 img {
   object-fit: cover;
@@ -263,7 +262,7 @@ section {
 .act2 figure {
   border: 1px solid white;
   border-radius: 30px;
-  height: 47%;
+  height: 49%;
   box-shadow: 0 0 25px #0000002e;
   font-size: 12px;
 }
@@ -283,8 +282,6 @@ section {
   height: 100%;
   box-shadow: 0 0 25px #0000002e;
   font-size: 12px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .act4 img {
   object-fit: cover;
@@ -300,7 +297,7 @@ section {
 .act5 figure {
   border: 1px solid white;
   border-radius: 30px;
-  height: 47%;
+  height: 49%;
   box-shadow: 0 0 25px #0000002e;
   font-size: 12px;
 }
@@ -535,9 +532,8 @@ footer p {
     margin-top: 0;
   }
   .act2 figure {
-    width: 45%;
+    width: 100%;
     height: 100%;
-    margin: 0;
   }
   .act4 {
     width: 32%;
@@ -551,9 +547,8 @@ footer p {
     margin-top: 0;
   }
   .act5 figure {
-    width: 45%;
+    width: 100%;
     height: 100%;
-    margin: 0;
   }
   footer {
     margin-left: 0;
