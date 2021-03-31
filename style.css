@@ -515,40 +515,62 @@ footer p {
     margin-left: 4%;
   }
   .Activites {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 208px 208px;
+    grid-gap: 20px;
   }
   .act1 {
-    width: 32%;
+    width: 100%;
     padding-bottom: 5%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+  .act1 figure {
+  margin: 0;
+}
   }
   .act2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 64%;
-    height: 208px;
+    width: 100%;
+    height: 100%;
     margin-top: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin: 0;
   }
   .act2 figure {
     width: 100%;
-    height: 100%;
+    height: calc(50% - 10px);
+    margin: 0;
+    margin-bottom: 20px;
   }
   .act4 {
-    width: 32%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .act4 figure {
+    margin: 0;
   }
   .act5 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 64%;
-    height: 208px;
+    width: 100%;
+    height: 100%;
     margin-top: 0;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    margin: 0;
   }
   .act5 figure {
     width: 100%;
-    height: 100%;
+    height: calc(50% - 10px);
+    margin: 0;
+    margin-bottom: 20px;
   }
   footer {
     margin-left: 0;
