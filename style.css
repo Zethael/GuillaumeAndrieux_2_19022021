@@ -463,10 +463,6 @@ footer p {
   }
 }
 @media all and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    margin-left: 1%;
-    margin-right: 1%;
-  }
   .headersite {
     justify-content: space-between;
   }
