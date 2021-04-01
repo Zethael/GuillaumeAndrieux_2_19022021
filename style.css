@@ -55,6 +55,25 @@ section.affinage {
   font-weight: bolder;
   font-size: 18px;
 }
+.ancrevignette {
+  display: flex;
+  text-decoration: none;
+}
+.ancrevignette:visited {
+  color: initial;
+}
+.ancrevignette2 {
+  text-decoration: none;
+}
+.ancrevignette2:visited {
+  color: initial;
+}
+.ancrevignette3 {
+  text-decoration: none;
+}
+.ancrevignette3:visited {
+  color: initial;
+}
 .boutonrecherche {
   width: 125px;
   border: 1px solid RGBa(0, 0, 0, 0.05);
@@ -91,6 +110,10 @@ section.affinage {
   font-size: 16px;
   padding-left: 0;
   padding-top: 0;
+}
+.boutonfiltre:hover {
+  background-color: #deebff;
+  transform: scale(1.050);
 }
 .boutonfiltre i {
   display: flex;
@@ -392,6 +415,9 @@ footer p {
   .zonetexte {
     width: 100%;
   }
+  .ancrevignette {
+    width: 100%;
+  }
   .blocshotel {
     flex-direction: column-reverse;
     width: 100%;
@@ -406,6 +432,9 @@ footer p {
   .logementsmain {
     display: flex;
     flex-direction: column;
+  }
+  .logementsmain figure {
+    width: 100%;
   }
   .logementsmain figcaption {
     margin-bottom: 0;
@@ -569,6 +598,9 @@ footer p {
     height: calc(50% - 10px);
     margin: 0;
     margin-bottom: 20px;
+  }
+  .ancrevignette3 {
+    height: 100%;
   }
   footer {
     margin-left: 0;
