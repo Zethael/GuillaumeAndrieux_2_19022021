@@ -440,6 +440,9 @@ footer p {
   .ancrevignette {
     width: 100%;
   }
+  #hebfoot {
+    align-self: center;
+  }
   .blocshotel {
     flex-direction: column-reverse;
     width: 100%;
