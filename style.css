@@ -340,6 +340,18 @@ section {
   height: calc(100% - 50px);
   border-radius: 30px 30px 0 0;
 }
+#pomergues {
+  height: 60%;
+}
+#frioul {
+  height: 37%;
+}
+#notredame {
+  height: 44%;
+}
+#longchamp {
+  height: 54%;
+}
 /* Footer */
 footer {
   background-color: #f2f2f2;
@@ -493,6 +505,18 @@ footer p {
     display: flex;
     flex-direction: column;
   }
+  #pomergues {
+    height: 200px;
+  }
+  #frioul {
+    height: 200px;
+  }
+  #notredame {
+    height: 200px;
+  }
+  #longchamp {
+    height: 200px;
+  }
   .Activites figure {
     height: 200px;
     font-weight: bolder;
@@ -611,6 +635,18 @@ footer p {
   }
   .ancrevignette3 {
     height: 100%;
+  }
+  #pomergues {
+    height: 208px;
+  }
+  #frioul {
+    height: 208px;
+  }
+  #notredame {
+    height: 208px;
+  }
+  #longchamp {
+    height: 208px;
   }
   footer {
     margin-left: 0;
