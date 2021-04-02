@@ -58,18 +58,21 @@ section.affinage {
 .ancrevignette {
   display: flex;
   text-decoration: none;
+  color: black;
 }
 .ancrevignette:visited {
   color: initial;
 }
 .ancrevignette2 {
   text-decoration: none;
+  color: black;
 }
 .ancrevignette2:visited {
   color: initial;
 }
 .ancrevignette3 {
   text-decoration: none;
+  color: black;
 }
 .ancrevignette3:visited {
   color: initial;
