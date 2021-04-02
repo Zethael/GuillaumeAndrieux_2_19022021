@@ -183,6 +183,9 @@ section.affinage {
   margin-bottom: 25px;
   margin-left: 40px;
 }
+#hebfoot {
+  justify-content: start;
+}
 .logementsmain {
   display: grid;
   grid-template-columns: 33% 33% 33%;
