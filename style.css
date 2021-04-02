@@ -364,6 +364,10 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
   }
+  nav {
+    border-bottom: solid 1px RGBa(0, 0, 0, 0.15);
+    
+  }
   .navlien {
     overflow: auto;
   }
